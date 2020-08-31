@@ -2,7 +2,6 @@ import { Injectable, inject, Inject } from "@angular/core"
 import { HttpClient, HttpHandler, HttpHeaders } from "@angular/common/http"
 import { Observable } from "rxjs";
 import { Usuario } from "../../modelo/usuario";
-import { QUERY_READ_TEMPLATE_REF } from "@angular/core/src/render3";
 
 @Injectable({
   providedIn: "root"
@@ -50,5 +49,20 @@ export class UsuarioServico {
 
     return this.http.post<Usuario>(this.url + "api/usuario/verificarUsuario", body, { headers });
   }
+
+  public salvarUsuario(usuario: Usuario): Observable<Usuario>
+  {
+    const headers = new HttpHeaders().set('content-type', 'application/json');
+
+    var body = {
+      email: usuario.email,
+      senha: usuario.senha,
+      nome: usuario.nome,
+      sobreNome: usuario.sobreNome
+    }
+
+    return this.http.post<Usuario>(this.url + "api/usuario", body, { headers });
+  }
+
 
 };

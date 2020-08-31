@@ -1,0 +1,86 @@
+<h1 class="h4 mb-2">Cadastro de Produto</h1>
+<label for="inputNome" class="sr-only">Nome</label>
+<input id="inputNome"
+       class="form-control mb-2 col-md-4"
+       name="Nome"
+       type="text"
+       placeholder="Nome"
+       [(ngModel)]="produto.nome"
+       #nome="ngModel"
+       [ngClass]="{
+         'is-invalid':nome.invalid && (nome.dirgy || nome.touched),
+         'is-valid':nome.valid && (nome.dirgy || nome.touched)
+         }"
+       required />
+
+<div class="invalid-feedback mb-3" *ngIf="nome.invalid && (nome.dirgy || nome.touched)">
+  <div *ngIf="nome.errors.required">
+    Nome deve ser preenchido!
+  </div>
+</div>
+
+
+<label for="inputDescricao" class="sr-only">Descrição</label>
+<input class="form-control mb-2 col-md-4"
+       type="text"
+       placeholder="Descrição"
+       id="inputDescricao"
+       name="Descricao"
+       [(ngModel)]="produto.descricao"
+       #descricao="ngModel"
+       [ngClass]="{
+         'is-invalid':descricao.invalid && (descricao.dirgy || descricao.touched),
+         'is-valid':descricao.valid && (descricao.dirgy || descricao.touched)
+         }"
+       required />
+
+<div class="invalid-feedback mb-3" *ngIf="descricao.invalid && (descricao.dirgy || descricao.touched)">
+  <div *ngIf="descricao.errors.required">
+    Descrição deve ser preenchido!
+  </div>
+</div>
+
+<label for="inputPreco" class="sr-only">Preço</label>
+<input class="form-control mb-2 col-md-2"
+       type="number"
+       placeholder="Preço"
+       id="inputPreco"
+       name="Preço"
+       [(ngModel)]="produto.preco"
+       #preco="ngModel"
+       [ngClass]="{
+         'is-invalid':preco.invalid && (preco.dirgy || preco.touched),
+         'is-valid':preco.valid && (preco.dirgy || preco.touched)
+         }"
+       required />
+
+<div class="invalid-feedback mb-3" *ngIf="preco.invalid && (preco.dirgy || preco.touched)">
+  <div *ngIf="preco.errors.required">
+    Preço deve ser preenchido!
+  </div>
+</div>
+
+<label for="inputGroupFile04" class="sr-only">Selecionar</label>
+<div class="input-group">
+  <div class="custom-file  mb-2 col-md-6">
+    <input type="file"
+           class="custom-file-input mb-2 col-md-6"
+           id="inputGroupFile04"
+           aria-describedby="inputGroupFileAddon04">
+    <label class="custom-file-label"
+           for="inputGroupFile04">Escolha uma Foto</label>
+  </div>
+
+  <!--<div class="input-group-append">
+    <button class="btn btn-outline-secondary"
+            type="button"
+            id="inputGroupFileAddon04">
+      Enviar
+    </button>
+  </div>-->
+
+</div>
+
+<button class="btn btn-lg btn-primary btn-block  mb-2" (click)="cadastrar()" type="submit">
+  Salvar
+</button>
