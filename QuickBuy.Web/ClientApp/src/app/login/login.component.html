@@ -1,0 +1,63 @@
+<form class="form-signin text-center">
+  <img class="mb-4 text-center" src="../../assets/logo_login.jpg"
+       alt="Logo Login" width="300" height="300">
+
+  <h1 class="h3 mb-3 font-weight-normal login">Login do Cliente</h1>
+
+  <input class="form-control  mb-2"
+         type="email"
+         name="email"
+         placeholder="Digite seu email"
+         [(ngModel)]="this.usuario.email"
+         #email="ngModel"
+         email
+         [ngClass]="{
+         'is-invalid':email.invalid && (email.dirgy || email.touched),
+         'is-valid':email.valid && (email.dirgy || email.touched)
+         }"
+         required />
+
+  <div class="invalid-feedback mb-3" *ngIf="email.invalid && (email.dirgy || email.touched)">
+    <div *ngIf="email.errors.required">
+      Email deve ser preenchido!
+    </div>
+    <div *ngIf="email.errors.email">
+      Email no formato incorreto!
+    </div>
+  </div>
+
+  <input class="form-control  mb-2"
+         type="password"
+         name="pass"
+         [ngClass]="{
+         'is-invalid':senha.invalid && (senha.dirgy || senha.touched),
+         'is-valid':senha.valid && (senha.dirgy || senha.touched)}"
+         placeholder="Digite sua senha"
+         [(ngModel)]="this.usuario.senha"
+         #senha="ngModel"
+         minlength="4"
+         required />
+
+  <div class="invalid-feedback mb-3" *ngIf="senha.invalid && (senha.dirgy || senha.touched)">
+    <div *ngIf="senha.errors.required">
+      Senha deve ser preenchido!
+    </div>
+    <div *ngIf="senha.errors.minlength">
+      Informe mínimo de 4 caracteres!
+    </div>
+  </div>
+
+  <button class="btn btn-lg btn-primary btn-block mb-3" (click)="entrar()" type="submit" [disabled]="ativa_spinner">
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" *ngIf="ativa_spinner"></span>
+    Entrar
+  </button>
+
+  <!--<button class="btn btn-lg btn-primary btn-block mb-3" type="submit" ">Entrar</button>-->
+
+  <div class="alert alert-danger" *ngIf="mensagem">
+    {{mensagem}}
+  </div>
+
+  <p class="mt-5 mb-3 text-muted">© 2020</p>
+
+</form>
