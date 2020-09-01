@@ -9,10 +9,17 @@ namespace QuickBuy.Dominio.Entidades
         public string Descricao { get; set; }
         public string Nome { get; set; }
         public decimal Preco { get; set; }
-
+        public string nomeArquivo { get; set; }
         public override void Validar()
         {
-            throw new System.NotImplementedException();
+            if (string.IsNullOrEmpty(this.Nome))
+                MensagemValidacao.Add("Nome deve ser informado.");
+
+            if (string.IsNullOrEmpty(this.Descricao))
+                MensagemValidacao.Add("Descrição deve ser informado.");
+
+            if (this.Preco == 0)
+                MensagemValidacao.Add("Preço deve ser informado.");
         }
     }
 }

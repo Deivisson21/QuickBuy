@@ -8,7 +8,7 @@ import { Produto } from "../../modelo/produto";
 })
 
 export class ProdutoServico implements OnInit {
-
+    
   private url: string;
   public produtos: Produto[];
 
@@ -25,15 +25,15 @@ export class ProdutoServico implements OnInit {
   }
 
   public cadastrar(produto: Produto): Observable<Produto>{
-    return this.http.post<Produto>(this.url + "api/produto/cadastrar", JSON.stringify(produto), { headers: this.headers });
+    return this.http.post<Produto>(this.url + "api/produto", JSON.stringify(produto), { headers: this.headers });
   }
 
   public salvar(produto: Produto): Observable<Produto>{
     return this.http.post<Produto>(this.url + "api/produto/salvar", JSON.stringify(produto), {headers:this.headers});
   }
 
-  public deletar(produto: Produto): Observable<Produto> {
-    return this.http.post<Produto>(this.url + "api/produto/deletar", JSON.stringify(produto), {headers:this.headers});
+  public deletar(produto: Produto): Observable<Produto[]> {
+    return this.http.post<Produto[]>(this.url + "api/produto/deletar", JSON.stringify(produto), {headers:this.headers});
   }
 
   public obterTodos(): Observable<Produto[]> {
@@ -42,6 +42,14 @@ export class ProdutoServico implements OnInit {
 
   public obterProduto(produtoId: number): Observable<Produto> {
     return this.http.get<Produto>(this.url + "api/produto/obterPorId");
+  }
+
+  public enviarArquivo(arquivo: File): Observable<string>  {
+
+    const formData: FormData = new FormData();
+    formData.append("arquivoEnviado", arquivo, arquivo.name);
+
+    return this.http.post<string>(this.url + "api/produto/EnviarArquivo", formData);
   }
 
 };

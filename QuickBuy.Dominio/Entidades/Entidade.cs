@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Threading;
 
 namespace QuickBuy.Dominio.Entidades
@@ -17,9 +18,15 @@ namespace QuickBuy.Dominio.Entidades
 
             MensagemValidacao.Clear();
         } 
+
+        public string ObterMensagemValidacao()
+        {
+            return string.Join(". ", MensagemValidacao);
+        }
+
         public abstract void Validar();
 
-        protected bool EhValido 
+        public bool EhValido 
         {
             get { return !MensagemValidacao.Any(); }
         }

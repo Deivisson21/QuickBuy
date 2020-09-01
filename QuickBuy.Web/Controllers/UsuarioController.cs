@@ -53,8 +53,15 @@ namespace QuickBuy.Web.Controllers
         {
             try
             {
+                var _usuario = _usuarioRepositorio.Obter(usuario.Email);
+
+                if(_usuario != null)
+                {
+                    return BadRequest("Usuario já cadastrado no sistema!");
+                }
+
                 _usuarioRepositorio.Adicionar(usuario);
-                return Created("api/usuario", usuario);
+                return Ok();
             }
             catch (Exception ex)
             {

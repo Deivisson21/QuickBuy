@@ -63,24 +63,31 @@
 <label for="inputGroupFile04" class="sr-only">Selecionar</label>
 <div class="input-group">
   <div class="custom-file  mb-2 col-md-6">
+
     <input type="file"
            class="custom-file-input mb-2 col-md-6"
            id="inputGroupFile04"
-           aria-describedby="inputGroupFileAddon04">
-    <label class="custom-file-label"
-           for="inputGroupFile04">Escolha uma Foto</label>
-  </div>
+           aria-describedby="inputGroupFileAddon04"
+           (change)="enviar_arquivo($event.target.files)"
+           [placeholder]="nomeArquivo">
 
-  <!--<div class="input-group-append">
-    <button class="btn btn-outline-secondary"
-            type="button"
-            id="inputGroupFileAddon04">
-      Enviar
+    <label class="custom-file-label" for="inputGroupFile04">{{produto.nomeArquivo}}</label>
+
+  </div>
+</div>
+
+<div class="form-inline">
+
+    <button style="margin-right:4px;" class="btn btn-primary col-md-2" (click)="cadastrar()" [disabled]="ativar_spinner" type="submit">
+      <span class="spinner-border spinner-border-sm" *ngIf="ativar_spinner"></span>
+      Salvar
     </button>
-  </div>-->
+    <a class="btn btn-secondary" [routerLink]='["/pesquisa-produto"]'>Cancelar</a>
 
 </div>
 
-<button class="btn btn-lg btn-primary btn-block  mb-2" (click)="cadastrar()" type="submit">
-  Salvar
-</button>
+
+<div class="alert alert-danger mb-2 col-md-4" *ngIf="mensagem">
+  {{mensagem}}
+</div>
+
