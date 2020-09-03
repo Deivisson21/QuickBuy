@@ -32,12 +32,17 @@
          'is-invalid':descricao.invalid && (descricao.dirgy || descricao.touched),
          'is-valid':descricao.valid && (descricao.dirgy || descricao.touched)
          }"
-       required />
+       required
+       minlength="50"/>
 
 <div class="invalid-feedback mb-3" *ngIf="descricao.invalid && (descricao.dirgy || descricao.touched)">
   <div *ngIf="descricao.errors.required">
     Descrição deve ser preenchido!
   </div>
+</div>
+
+<div class="invalid-feedback mb-3" *ngIf="descricao.errors.minlength">
+  Descrição deve ter no minimo 50 caracteres!
 </div>
 
 <label for="inputPreco" class="sr-only">Preço</label>

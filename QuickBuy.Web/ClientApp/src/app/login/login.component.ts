@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Usuario } from '../modelo/usuario';
 import { Router, ActivatedRoute } from '@angular/router';
 import { UsuarioServico } from '../servicos/usuario/usuario.servico';
-import { error } from 'util';
 
 @Component({
   selector: 'app-login',
@@ -33,26 +32,14 @@ export class LoginComponent {
     this.usuarioServico.verificarUsuario(this.usuario)
       .subscribe(
         usuario_json => {
-          //console.log(data);
-          this.usuarioServico.usuario = usuario_json;
-          //sessionStorage.setItem("userAutenticado", "1");
-          //sessionStorage.setItem("email-usuario", usuarioRetorno.email);
-
+          this.usuarioServico.usuario = usuario_json;       
           this.router.navigate([this.url_ativa == undefined ? "/" : this.url_ativa]);
         },
         err => {
-          //console.log(err.error);
           this.mensagem = err.error;
           this.ativa_spinner = false;
         }
       );
-
-    //if (this.usuario.email == "deivisson.tecnico@gmail.com" && this.usuario.senha == "1234")
-    //{
-    //  sessionStorage.setItem("userAutenticado", "1");
-
-    //  this.router.navigate([this.url_ativa == undefined ? "/" : this.url_ativa ]);
-    //}
   }
 
 }
