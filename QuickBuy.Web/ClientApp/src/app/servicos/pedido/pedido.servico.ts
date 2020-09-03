@@ -28,4 +28,8 @@ export class PedidoServico implements OnInit {
     return this.http.post<number>(this.url + "api/pedido", JSON.stringify(pedido), { headers: this.headers });
   }
 
+  public ObterTodosPedidos(UsuarioId: string): Observable<pedidos[]> {
+    return this.http.get<pedidos[]>(this.url + "api/pedido/obterPedidosUsuario?Id=" + UsuarioId);
+  }
+
 };

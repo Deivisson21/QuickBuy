@@ -32,7 +32,8 @@ export class LoginComponent {
     this.usuarioServico.verificarUsuario(this.usuario)
       .subscribe(
         usuario_json => {
-          this.usuarioServico.usuario = usuario_json;       
+          this.usuarioServico.usuario = usuario_json;
+          sessionStorage.setItem("Usuario_Pedido", JSON.stringify(usuario_json));
           this.router.navigate([this.url_ativa == undefined ? "/" : this.url_ativa]);
         },
         err => {

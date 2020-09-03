@@ -54,6 +54,12 @@ export class LojaEfetivarComponent implements OnInit{
     this.carrinhoComprar.RemoverProduto(produto);
     this.produtos = this.carrinhoComprar.obterProdutos();
 
+    if (this.produtos.length <= 0)
+    {
+      this.router.navigate(['/']);
+    }
+      
+
     this.atualizar_Total()
   }
 

@@ -14,6 +14,9 @@
           <li class="nav-item" [routerLinkActive]='["link-active"]' *ngIf="usuarioAdministrador()">
             <a class="nav-link text-dark" [routerLink]='["/pesquisa-produto"]'>Produto</a>
           </li>
+          <li class="nav-item" [routerLinkActive]='["link-active"]'>
+            <a class="nav-link text-dark" [routerLink]='["/loja-listaPedidos"]' *ngIf="usuarioLogado()">Pedidos</a>
+          </li>
           <li class="nav-item" [routerLinkActive]='["link-active"]' *ngIf="!usuarioLogado()">
             <a class="nav-link text-dark" [routerLink]='["/login"]'>Entrar</a>
           </li>

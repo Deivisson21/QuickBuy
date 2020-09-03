@@ -1,0 +1,36 @@
+<div class="container" *ngIf="exibirPedido">
+  <div class="row">
+    <div class="col-md-10">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Numero</th>
+            <th>Data Pedido</th>
+            <th>Previsão Entrega</th>
+            <th>Cep</th>
+            <th>Estado</th>
+            <th>Cidade</th>
+            <th>Endereço</th>
+            <th>Nº</th>
+            <th>FormaPagamento</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of pedidos">
+            <td> {{p.id}} </td>
+            <td>{{p.dataPedido}}</td>
+            <td>{{p.dataPrevisaoEntrega}}</td>
+            <td>{{p.cep}}</td>
+            <td>{{p.estado}}</td>
+            <td>{{p.cidade}}</td>
+            <td>{{p.enderecoCompleto}}</td>
+            <td>{{p.numeroEndereco}}</td>
+            <td>{{p.formaPagamento.descricao}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="alert alert-danger" *ngIf="!exibirPedido"> Não existe pedidos para esse usuário! </div>
