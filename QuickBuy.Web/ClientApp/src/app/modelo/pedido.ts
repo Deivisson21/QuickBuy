@@ -15,6 +15,8 @@ export class pedidos{
   public itensPedido: itemPedido[];
 
   constructor() {
+    this.dataPedido = new Date();
+    this.dataPrevisaoEntrega = new Date();
     this.itensPedido = [];
   } 
 };

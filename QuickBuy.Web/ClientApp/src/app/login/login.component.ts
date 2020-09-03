@@ -12,7 +12,7 @@ export class LoginComponent {
   title = 'login';
   public usuario;
   userAutenticado: boolean;
-  private url_ativa: string;
+  public url_ativa: string;
   public mensagem: string;
   public ativa_spinner: boolean;
 
