@@ -111,4 +111,6 @@ export class LojaEfetivarComponent implements OnInit{
       ) 
   }
 
+ //public TESTE() {}
+
 }
