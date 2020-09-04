@@ -1,0 +1,191 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Web\\QuickBuy.Web.csproj": {}
+  },
+  "projects": {
+    "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Dominio\\QuickBuy.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Dominio\\QuickBuy.Dominio.csproj",
+        "projectName": "QuickBuy.Dominio",
+        "projectPath": "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Dominio\\QuickBuy.Dominio.csproj",
+        "packagesPath": "C:\\Users\\Deivisson\\.nuget\\packages\\",
+        "outputPath": "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Deivisson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Repositorio\\QuickBuy.Repositorio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Repositorio\\QuickBuy.Repositorio.csproj",
+        "projectName": "QuickBuy.Repositorio",
+        "projectPath": "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Repositorio\\QuickBuy.Repositorio.csproj",
+        "packagesPath": "C:\\Users\\Deivisson\\.nuget\\packages\\",
+        "outputPath": "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Repositorio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Deivisson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Dominio\\QuickBuy.Dominio.csproj": {
+                "projectPath": "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Dominio\\QuickBuy.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Web\\QuickBuy.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Web\\QuickBuy.Web.csproj",
+        "projectName": "QuickBuy.Web",
+        "projectPath": "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Web\\QuickBuy.Web.csproj",
+        "packagesPath": "C:\\Users\\Deivisson\\.nuget\\packages\\",
+        "outputPath": "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Deivisson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Repositorio\\QuickBuy.Repositorio.csproj": {
+                "projectPath": "D:\\Deivisson\\ProjetoWebAPI\\Andamento\\QuickBuy\\QuickBuy.Repositorio\\QuickBuy.Repositorio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

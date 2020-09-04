@@ -1,0 +1,12 @@
+D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Repositorio\bin\Debug\netstandard2.0\QuickBuy.Repositorio.deps.json
+D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Repositorio\bin\Debug\netstandard2.0\QuickBuy.Repositorio.dll
+D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Repositorio\bin\Debug\netstandard2.0\QuickBuy.Repositorio.pdb
+D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Repositorio\obj\Debug\netstandard2.0\QuickBuy.Repositorio.AssemblyInfoInputs.cache
+D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Repositorio\obj\Debug\netstandard2.0\QuickBuy.Repositorio.AssemblyInfo.cs
+D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Repositorio\obj\Debug\netstandard2.0\QuickBuy.Repositorio.dll
+D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Repositorio\obj\Debug\netstandard2.0\QuickBuy.Repositorio.pdb
+D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Repositorio\bin\Debug\netstandard2.0\QuickBuy.Dominio.dll
+D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Repositorio\bin\Debug\netstandard2.0\QuickBuy.Dominio.pdb
+D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Repositorio\obj\Debug\netstandard2.0\QuickBuy.Repositorio.csprojAssemblyReference.cache
+D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Repositorio\obj\Debug\netstandard2.0\QuickBuy.Repositorio.csproj.CopyComplete
+D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Repositorio\obj\Debug\netstandard2.0\QuickBuy.Repositorio.csproj.CoreCompileInputs.cache

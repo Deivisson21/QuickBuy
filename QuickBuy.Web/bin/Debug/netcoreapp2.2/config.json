@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "ConexaoPadrao": "server=localhost;uid=root;pwd=root;database=QuickBuyDB"
+  }
+}
