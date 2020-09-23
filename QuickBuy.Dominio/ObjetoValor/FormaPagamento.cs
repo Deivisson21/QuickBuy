@@ -1,6 +1,4 @@
 ﻿using QuickBuy.Dominio.Enumerados;
-using System;
-using System.Net.Http.Headers;
 
 namespace QuickBuy.Dominio.ObjetoValor
 {

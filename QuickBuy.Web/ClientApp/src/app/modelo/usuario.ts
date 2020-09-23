@@ -4,5 +4,6 @@ export class Usuario {
   senha: string;
   nome: string;
   sobreNome: string;
+  token: string;
   administrador: boolean;
 };

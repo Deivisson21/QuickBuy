@@ -1,7 +1,9 @@
 using System;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using QuickBuy.Dominio.Contratos;
 using QuickBuy.Dominio.Entidades;
+using QuickBuy.Web.Help;
 
 namespace QuickBuy.Web.Controllers
 {
@@ -14,6 +16,7 @@ namespace QuickBuy.Web.Controllers
             _usuarioRepositorio = usuarioRepositorio;
         }
 
+        [Authorize("Bearer")]
         [HttpGet]
         public IActionResult Get()
         {
@@ -59,6 +62,9 @@ namespace QuickBuy.Web.Controllers
                 {
                     return BadRequest("Usuario já cadastrado no sistema!");
                 }
+
+                var token = TokenService.GenerateToken(usuario);
+                usuario.Token = token;
 
                 _usuarioRepositorio.Adicionar(usuario);
                 return Ok();

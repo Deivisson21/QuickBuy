@@ -6,7 +6,6 @@ D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Web\bin\Debug\netcoreapp2
 D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Web\bin\Debug\netcoreapp2.2\QuickBuy.Web.Views.dll
 D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Web\bin\Debug\netcoreapp2.2\QuickBuy.Web.Views.pdb
 D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Web\obj\Debug\netcoreapp2.2\QuickBuy.Web.csprojAssemblyReference.cache
-D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Web\obj\Debug\netcoreapp2.2\QuickBuy.Web.csproj.CoreCompileInputs.cache
 D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Web\obj\Debug\netcoreapp2.2\QuickBuy.Web.RazorAssemblyInfo.cache
 D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Web\obj\Debug\netcoreapp2.2\QuickBuy.Web.RazorAssemblyInfo.cs
 D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Web\obj\Debug\netcoreapp2.2\QuickBuy.Web.AssemblyInfoInputs.cache
@@ -27,3 +26,4 @@ D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Web\bin\Debug\netcoreapp2
 D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Web\bin\Debug\netcoreapp2.2\QuickBuy.Repositorio.dll
 D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Web\bin\Debug\netcoreapp2.2\QuickBuy.Repositorio.pdb
 D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Web\bin\Debug\netcoreapp2.2\QuickBuy.Dominio.pdb
+D:\Deivisson\ProjetoWebAPI\Andamento\QuickBuy\QuickBuy.Web\obj\Debug\netcoreapp2.2\QuickBuy.Web.csproj.CoreCompileInputs.cache
